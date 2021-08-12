@@ -1,5 +1,5 @@
 {
-  "name": "orb-prototype",
+  "name": "orb-working",
   "version": "1.0.0",
   "description": "",
   "keywords": [],
@@ -9,6 +9,7 @@
     "@use-it/interval": "1.0.0",
     "date-fns": "2.23.0",
     "lodash": "4.17.15",
+    "node-sass": "4.14.1",
     "react": "16.12.0",
     "react-dom": "16.12.0",
     "react-scripts": "3.0.1",

@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 // orb.js
 //
 // Orb 2.4.0 (20200707) - Javascript Library for Astronomical Calculation

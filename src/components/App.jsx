@@ -25,7 +25,7 @@ const App = ({ ...props }) => {
   return (
     <>
       <label>Date: {date.toISOString()}</label>
-      <div class="row">
+      <div className="row">
         <button onClick={() => setRunning((paused) => !paused)}>
           {running ? "Pause" : "Start"}
         </button>

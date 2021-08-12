@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import React, { useState } from "react";
 import Orb from "../lib/orb.v2";
 import DatGui, { DatNumber } from "@tim-soft/react-dat-gui";
 
@@ -18,7 +18,6 @@ const useAsteroid = () => {
     setOrbitalParams((currentParams) => ({ ...currentParams, ...newData }));
 
   const orb = new Orb.Kepler(orbitalParams);
-  console.log(orb);
 
   const renderStats = (date) => {
     const coords = orb.xyz(date);
