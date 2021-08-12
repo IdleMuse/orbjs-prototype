@@ -30,11 +30,7 @@ const useAsteroid = () => {
   };
 
   const renderControls = () => (
-    <DatGui
-      data={orbitalParams}
-      onUpdate={updateOrbitalParams}
-      liveUpdate={false}
-    >
+    <DatGui data={orbitalParams} onUpdate={updateOrbitalParams}>
       <DatNumber
         path="gm"
         label="gm (au^3/d^2)"
@@ -46,7 +42,7 @@ const useAsteroid = () => {
         path="eccentricity"
         label="eccentricity"
         min={0}
-        max={10}
+        max={0.99}
         step={0.01}
       />
       <DatNumber
