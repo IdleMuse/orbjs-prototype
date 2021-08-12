@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis&display=swap");
+
+$dark: #151515;
+$light: #CACACA;
+
+html{
+   font-size: 32px;
+}
+
+body {
+   font-family: "Dosis", sans-serif;
+   text-align: center;
+   background-color: $dark;
+   color: $light;
+}
+
+button {
+   font-family: "Dosis", sans-serif;
+   background-color: $dark;
+   color: $light;
+   border-radius: 0.1rem;
+   padding: 0.1rem 0.25rem;
+   border: 1px solid $light;
+   &:hover{
+      color: $dark;
+      background-color: $light;
+   }
+}
+
+pre {
+   font-size: 0.5rem;
+   text-align: left;
+}
+
+#root{
+   > label {
+      display: block;
+      font-size: 0.5rem;        
+      text-align: left;
+      margin-bottom: 0.25rem;
+   }
+
+   .row{
+      display: flex;
+      * {
+         margin-right: 0.5em;
+      }
+   }
+
+   .fullscreen{   
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: -1;
+   }
+}
